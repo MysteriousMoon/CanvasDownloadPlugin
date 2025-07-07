@@ -3,13 +3,16 @@
   "name": "Canvas Course Downloader (Simple)",
   "version": "1.1",
   "description": "Download all attachments in the Canvas course module.",
-  "permissions": [],
   "host_permissions": [
-    "https://q.utoronto.ca/*"
+    "https://q.utoronto.ca/*",
+    "https://*.instructure.com/*"
   ],
   "content_scripts": [
     {
-      "matches": ["https://q.utoronto.ca/courses/*/modules"],
+      "matches": [
+        "https://q.utoronto.ca/courses/*/modules",
+        "https://*.instructure.com/courses/*/modules"
+      ],
       "js": ["content.js"],
       "css": ["style.css"]
     }
