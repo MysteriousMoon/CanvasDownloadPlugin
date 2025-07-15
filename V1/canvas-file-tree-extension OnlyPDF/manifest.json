@@ -13,7 +13,19 @@
         "https://q.utoronto.ca/courses/*/modules",
         "https://*.instructure.com/courses/*/modules"
       ],
-      "js": ["content.js"],
+      "js": [
+        "config.js",
+        "config-pdf.js",
+        "errorHandler.js",
+        "domUtils.js",
+        "courseExtractor.js",
+        "moduleParser.js",
+        "fileTreeGenerator.js",
+        "downloadManager.js",
+        "buttonManager.js",
+        "featureAwareButtonManager.js",
+        "content-pdf.js"
+      ],
       "css": ["style.css"]
     }
   ],
